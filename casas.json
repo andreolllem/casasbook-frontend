@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "name": "Casa Michele",
+    "quartos": "2",
+    "wc": "2",
+    "garagem": "3",
+    "slug": null,
+    "published_at": "2020-12-27T16:01:49.870Z",
+    "created_at": "2020-12-27T16:01:46.484Z",
+    "updated_at": "2020-12-27T16:01:49.899Z",
+    "image": [
+      {
+        "id": 1,
+        "name": "IMG_20201103_161429.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 4624,
+        "height": 2600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_20201103_161429.jpg",
+            "hash": "thumbnail_IMG_20201103_161429_8572cd4fe3",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 245,
+            "height": 138,
+            "size": 9.5,
+            "path": null,
+            "url": "/uploads/thumbnail_IMG_20201103_161429_8572cd4fe3.jpg"
+          },
+          "large": {
+            "name": "large_IMG_20201103_161429.jpg",
+            "hash": "large_IMG_20201103_161429_8572cd4fe3",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 1000,
+            "height": 562,
+            "size": 108.39,
+            "path": null,
+            "url": "/uploads/large_IMG_20201103_161429_8572cd4fe3.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_20201103_161429.jpg",
+            "hash": "medium_IMG_20201103_161429_8572cd4fe3",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 750,
+            "height": 422,
+            "size": 66.07,
+            "path": null,
+            "url": "/uploads/medium_IMG_20201103_161429_8572cd4fe3.jpg"
+          },
+          "small": {
+            "name": "small_IMG_20201103_161429.jpg",
+            "hash": "small_IMG_20201103_161429_8572cd4fe3",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 500,
+            "height": 281,
+            "size": 31.85,
+            "path": null,
+            "url": "/uploads/small_IMG_20201103_161429_8572cd4fe3.jpg"
+          }
+        },
+        "hash": "IMG_20201103_161429_8572cd4fe3",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 1507.11,
+        "url": "/uploads/IMG_20201103_161429_8572cd4fe3.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2020-12-27T16:01:36.895Z",
+        "updated_at": "2020-12-27T16:01:36.919Z"
+      },
+      {
+        "id": 2,
+        "name": "IMG_20201103_161422.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 4624,
+        "height": 2600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_20201103_161422.jpg",
+            "hash": "thumbnail_IMG_20201103_161422_0d551231f8",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 245,
+            "height": 138,
+            "size": 9.5,
+            "path": null,
+            "url": "/uploads/thumbnail_IMG_20201103_161422_0d551231f8.jpg"
+          },
+          "large": {
+            "name": "large_IMG_20201103_161422.jpg",
+            "hash": "large_IMG_20201103_161422_0d551231f8",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 1000,
+            "height": 562,
+            "size": 109.62,
+            "path": null,
+            "url": "/uploads/large_IMG_20201103_161422_0d551231f8.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_20201103_161422.jpg",
+            "hash": "medium_IMG_20201103_161422_0d551231f8",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 750,
+            "height": 422,
+            "size": 66.83,
+            "path": null,
+            "url": "/uploads/medium_IMG_20201103_161422_0d551231f8.jpg"
+          },
+          "small": {
+            "name": "small_IMG_20201103_161422.jpg",
+            "hash": "small_IMG_20201103_161422_0d551231f8",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 500,
+            "height": 281,
+            "size": 32.1,
+            "path": null,
+            "url": "/uploads/small_IMG_20201103_161422_0d551231f8.jpg"
+          }
+        },
+        "hash": "IMG_20201103_161422_0d551231f8",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 1581.02,
+        "url": "/uploads/IMG_20201103_161422_0d551231f8.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2020-12-27T16:01:36.964Z",
+        "updated_at": "2020-12-27T16:01:37.007Z"
+      },
+      {
+        "id": 3,
+        "name": "IMG_20201103_161446.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 4624,
+        "height": 2600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_20201103_161446.jpg",
+            "hash": "thumbnail_IMG_20201103_161446_8e3a8902ed",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 245,
+            "height": 138,
+            "size": 8.57,
+            "path": null,
+            "url": "/uploads/thumbnail_IMG_20201103_161446_8e3a8902ed.jpg"
+          },
+          "large": {
+            "name": "large_IMG_20201103_161446.jpg",
+            "hash": "large_IMG_20201103_161446_8e3a8902ed",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 1000,
+            "height": 562,
+            "size": 99.94,
+            "path": null,
+            "url": "/uploads/large_IMG_20201103_161446_8e3a8902ed.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_20201103_161446.jpg",
+            "hash": "medium_IMG_20201103_161446_8e3a8902ed",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 750,
+            "height": 422,
+            "size": 60.49,
+            "path": null,
+            "url": "/uploads/medium_IMG_20201103_161446_8e3a8902ed.jpg"
+          },
+          "small": {
+            "name": "small_IMG_20201103_161446.jpg",
+            "hash": "small_IMG_20201103_161446_8e3a8902ed",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 500,
+            "height": 281,
+            "size": 29.08,
+            "path": null,
+            "url": "/uploads/small_IMG_20201103_161446_8e3a8902ed.jpg"
+          }
+        },
+        "hash": "IMG_20201103_161446_8e3a8902ed",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 1477.9,
+        "url": "/uploads/IMG_20201103_161446_8e3a8902ed.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2020-12-27T16:01:37.040Z",
+        "updated_at": "2020-12-27T16:01:37.061Z"
+      }
+    ]
+  }
+]

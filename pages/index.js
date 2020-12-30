@@ -1,65 +1,89 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import { fromImageToUrl, API_URL } from "../utils/urls";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Card from "react-bootstrap/Card";
+import AuthContext from "../context/AuthContext";
+import { useContext } from "react";
+import Login from "./login";
 
-export default function Home() {
+export default function Home({ casas }) {
+  const { user, logoutUser } = useContext(AuthContext);
+
+  if (!user) {
+    return (
+      <div className={styles.notAccount}>
+        <Link href="/login">
+          <Login />
+        </Link>
+      </div>
+    );
+  }
+
   return (
-    <div className={styles.container}>
+    <div className={styles.card}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+      <div>
+        {casas.map((casa) => (
+          <Card
+            className={styles.card_casas}
+            style={{
+              width: "25rem",
+              top: 60,
+              marginTop: 20,
+              float: "left",
+              justifyContent: "space-between",
+              border: "#232626",
+              borderRadius: 8,
+              backgroundColor: "#272b36",
+              maxWidth: 400,
+              marginLeft: 50,
+            }}
+            key={casa.name}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <Link href={`/casas/${casa.slug}`}>
+              <div className={styles.card_casas}>
+                <Card.Img
+                  src={fromImageToUrl(casa.image[0])}
+                  alt=""
+                  style={{ cursor: "pointer", padding: 20 }}
+                />
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+                <Card.Body
+                  style={{
+                    backgroundColor: "#272b36",
+                    color: "#fff",
+                    border: "#232626",
+                    cursor: "pointer",
+                    fontWeight: 200,
+                    borderRadius: 8,
+                  }}
+                >
+                  <div>Locação: {casa.name}</div>
+                  <div>Quartos: {casa.quartos}</div>
+                  <div>Banheiro: {casa.wc}</div>
+                  <div>Garagem: {casa.garagem} carros</div>
+                </Card.Body>
+              </div>
+            </Link>
+          </Card>
+        ))}
+      </div>
     </div>
-  )
+  );
+}
+
+export async function getStaticProps() {
+  const casa_res = await fetch(`${API_URL}/casas/`);
+  const casas = await casa_res.json();
+
+  return {
+    props: {
+      casas,
+    },
+  };
 }
